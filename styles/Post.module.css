@@ -1,0 +1,33 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.post_slug_btn {
+  display: flex;
+}
+
+.each_post_btn {
+  padding: 1rem 3rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.each_post_btn:hover {
+  cursor: pointer;
+}
+
+.each_post_btn {
+  background-color: #ccffed;
+}
+
+.delete_btn {
+  background-color: #ffbbbb;
+}
+
+.post_card_main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

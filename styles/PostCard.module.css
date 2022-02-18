@@ -1,0 +1,30 @@
+.post_main {
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.img {
+  width: 20rem;
+  height: 5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc {
+  overflow: hidden;
+}
+
+.content p:last-child {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.edit_link {
+  color: rgb(175, 185, 193);
+  text-decoration: underline;
+}
