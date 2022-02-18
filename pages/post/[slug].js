@@ -38,9 +38,7 @@ const Posts = ({ posts }) => {
         </div>
       </div>
       <h3 style={{ textAlign: "center" }}>All post</h3>
-      <div className={styles.post_card_main}>
-        <PostCard />
-      </div>
+      <div className={styles.post_card_main}>{/* <PostCard /> */}</div>
     </div>
   );
 };

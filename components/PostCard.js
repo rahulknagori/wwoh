@@ -3,15 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/PostCard.module.css";
 import Card from "./UI/Card";
+import { useDispatch, useSelector } from "react-redux";
+import { postData } from "../features/dataslice";
 
 const PostCard = () => {
   const [data, setData] = useState([]);
   const [imagdata, setImageData] = useState([]);
 
-  const urls = [
-    "https://jsonplaceholder.typicode.com/posts",
-    "https://jsonplaceholder.typicode.com/photos",
-  ];
+  const dispatch = useDispatch();
 
   useEffect(async () => {
     const data = await fetch("https://jsonplaceholder.typicode.com/posts")
@@ -23,6 +22,9 @@ const PostCard = () => {
       .then((result) => setImageData(result));
   }, []);
 
+  useEffect(() => {
+    dispatch(postData({ data }));
+  }, []);
 
   return data?.map((eachData, i) => {
     return (
